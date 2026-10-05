@@ -16,7 +16,7 @@ public class Product {
 
     public Long getId() { return id; }
 
-    public String getName() { return name; }
+    public String getName() { return name; } //Tutorial 2: verified getter removal drops the field from JSON
 
     public double getPrice() { return price; }
 } 
