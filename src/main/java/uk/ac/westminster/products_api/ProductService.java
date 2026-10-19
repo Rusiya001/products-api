@@ -13,6 +13,7 @@ public class ProductService {
 
     public ProductService(){
         DigitalProduct digital = new DigitalProduct();
+        digital.setName("E-book");
 
         PhysicalProduct physical = new PhysicalProduct();
 
