@@ -11,6 +11,15 @@ public class ProductService {
     private List<Product> products = new ArrayList<>();
     private Long nextId = 1L;
 
+    public ProductService(){
+        DigitalProduct digital = new DigitalProduct();
+
+        PhysicalProduct physical = new PhysicalProduct();
+
+        addProduct(digital);
+        addProduct(physical);
+    }
+
     public List<Product> getAllProducts() {
         return products;
     }
